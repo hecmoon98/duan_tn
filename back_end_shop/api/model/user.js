@@ -13,7 +13,7 @@ const userSchema = mongoose.Schema({
   hoTen: { type: String, required: true },
   gioiTinh: { type: String, required: true },
   ngaySinh: { type: String, required: true },
-  phoneNumber: { type: Number, required: true },
+  phoneNumber: { type: String, required: true },
   diaChi: { type: String, required: true },
   cmdd: { type: Number, default:0 },
   chucVu: { type: String, required: true },
