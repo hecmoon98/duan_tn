@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGOOSE_ATLAS_PW": "tess",
+        "JWT_KEY":"secret"
+    }
+}
