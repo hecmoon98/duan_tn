@@ -6,10 +6,9 @@ const donHangSchema = mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
     match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
   },
-  phoneNumber: { type: Number, required: true },
+  phoneNumber: { type: String, required: true },
   diaChi: { type: String, required: true },
   product: { type: Array, required: true },
   total: { type: Number, required: true },

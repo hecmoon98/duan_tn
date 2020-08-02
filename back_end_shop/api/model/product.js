@@ -8,7 +8,7 @@ const newsSchema = mongoose.Schema({
     moTa:{type:String, require:true},
     chatLieu:{type:String, require:true},
     huongDanSD:{type:String, require:true},
-    suKien:{type:String, require:true},
+    suKien:{type:String, default:""},
     date: {
         type: Date,
         default: Date.now,

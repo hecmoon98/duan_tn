@@ -83,9 +83,12 @@ exports.user_login_post = (req, res, next) => {
             );
             return res.status(200).json({
               message: "Auth successful",
+              _id: user._id,
               email: user.email,
               hoTen: user.hoTen,
               chucVu: user.chucVu,
+              phoneNumber: user.phoneNumber,
+              diaChi: user.diaChi,
               token: token,
             });
           }

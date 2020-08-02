@@ -62,7 +62,7 @@ exports.product_get_all = (req, res, next) => {
     .then((result) => {
       res.status(200).json({
         count: result.length,
-        news: result.map((item) => {
+        products: result.map((item) => {
           return {
             _id: item._id,
             images: item.images,

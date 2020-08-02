@@ -8,13 +8,13 @@ const donHang = require("../controller/don-hang");
 
 routes.post("/", donHang.donHang_post);
 
-// routes.get("/", donHang.donHang_get_all);
+routes.get("/", donHang.donHang_get_all);
 
-// routes.get("/:donHangId", donHang.donHang_get_one);
+routes.get("/:donHangId", donHang.donHang_get_one);
 
 
-// routes.put("/:donHangId", donHang.donHang_put);
+routes.put("/:donHangId", donHang.donHang_put);
 
-// routes.delete("/:donHangId", donHang.donHang_delete);
+routes.delete("/:donHangId", donHang.donHang_delete);
 
 module.exports = routes;
